@@ -1,0 +1,223 @@
+{
+  "categories": [
+    {
+      "id": "breakfast",
+      "name": "Petit Déjeuner",
+      "nameEn": "Breakfast"
+    },
+    {
+      "id": "brunch",
+      "name": "Brunch",
+      "nameEn": "Brunch"
+    },
+    {
+      "id": "lunch",
+      "name": "Déjeuner",
+      "nameEn": "Lunch"
+    },
+    {
+      "id": "drinks",
+      "name": "Boissons",
+      "nameEn": "Drinks"
+    },
+    {
+      "id": "desserts",
+      "name": "Desserts",
+      "nameEn": "Desserts"
+    }
+  ],
+  "items": [
+    {
+      "id": "brinos-avocat",
+      "name": "Brinos Avocat",
+      "description": "Brioche toastée, avocat frais, œuf au plat, pousses",
+      "price": 12,
+      "category": "brunch",
+      "image": "/images/menu/brinos-avocat.jpg",
+      "tags": ["signature", "vegetarian"],
+      "featured": true
+    },
+    {
+      "id": "brinos-saumon",
+      "name": "Brinos Saumon",
+      "description": "Brioche toastée, saumon fumé, cream cheese, câpres",
+      "price": 14,
+      "category": "brunch",
+      "image": "/images/menu/brinos-saumon.jpg",
+      "tags": ["signature"],
+      "featured": true
+    },
+    {
+      "id": "brinos-poulet",
+      "name": "Brinos Poulet",
+      "description": "Brioche toastée, poulet grillé, avocat, sauce maison",
+      "price": 13,
+      "category": "brunch",
+      "image": "/images/menu/brinos-poulet.jpg",
+      "tags": ["signature"],
+      "featured": false
+    },
+    {
+      "id": "avocat-toast",
+      "name": "Tartine Avocat",
+      "description": "Pain de campagne, avocat écrasé, œuf poché, graines",
+      "price": 7.5,
+      "category": "breakfast",
+      "image": "/images/menu/avocat-toast.jpg",
+      "tags": ["vegetarian"],
+      "featured": true
+    },
+    {
+      "id": "egg-muffin",
+      "name": "Egg Muffin",
+      "description": "Muffin anglais, œuf au plat, cheddar fondu",
+      "price": 5.5,
+      "category": "breakfast",
+      "image": "/images/menu/egg-muffin.jpg",
+      "tags": [],
+      "featured": false
+    },
+    {
+      "id": "granola",
+      "name": "Granola Maison",
+      "description": "Granola caramélisé, yaourt grec, fruits frais de saison",
+      "price": 8,
+      "category": "breakfast",
+      "image": "/images/menu/granola.jpg",
+      "tags": ["vegetarian"],
+      "featured": true
+    },
+    {
+      "id": "avocat-teriyaki",
+      "name": "Avocat Teriyaki",
+      "description": "Avocat cuit façon Teriyaki, œuf poché, sésame",
+      "price": 11,
+      "category": "brunch",
+      "image": "/images/menu/avocat-teriyaki.jpg",
+      "tags": ["vegetarian", "chef-special"],
+      "featured": true
+    },
+    {
+      "id": "salade-gambas",
+      "name": "Salade Gambas",
+      "description": "Gambas grillées, tomates, riz, noisettes, grenade",
+      "price": 14,
+      "category": "lunch",
+      "image": "/images/menu/salade-gambas.jpg",
+      "tags": [],
+      "featured": false
+    },
+    {
+      "id": "salade-fenouil",
+      "name": "Salade Fenouil",
+      "description": "Fenouil, noix, haricots, œuf mollet, vinaigrette agrumes",
+      "price": 12,
+      "category": "lunch",
+      "image": "/images/menu/salade-fenouil.jpg",
+      "tags": ["vegetarian"],
+      "featured": false
+    },
+    {
+      "id": "latte",
+      "name": "Latte",
+      "description": "Espresso, lait moussé au choix",
+      "price": 3.5,
+      "category": "drinks",
+      "image": "/images/menu/latte.jpg",
+      "tags": [],
+      "featured": true
+    },
+    {
+      "id": "cappuccino",
+      "name": "Cappuccino",
+      "description": "Espresso, mousse de lait onctueuse",
+      "price": 3.5,
+      "category": "drinks",
+      "image": "/images/menu/cappuccino.jpg",
+      "tags": [],
+      "featured": false
+    },
+    {
+      "id": "cafe-fino",
+      "name": "Café Fino",
+      "description": "Espresso, purée de vanille maison, lait",
+      "price": 4.5,
+      "category": "drinks",
+      "image": "/images/menu/cafe-fino.jpg",
+      "tags": ["signature"],
+      "featured": true
+    },
+    {
+      "id": "chai-latte",
+      "name": "Chaï Latte",
+      "description": "Thé chai épicé, lait moussé",
+      "price": 4,
+      "category": "drinks",
+      "image": "/images/menu/chai-latte.jpg",
+      "tags": [],
+      "featured": false
+    },
+    {
+      "id": "matcha-clementine",
+      "name": "Matcha Clémentine",
+      "description": "Thé matcha, clémentine, lait de coco",
+      "price": 5,
+      "category": "drinks",
+      "image": "/images/menu/matcha-clementine.jpg",
+      "tags": ["vegan"],
+      "featured": true
+    },
+    {
+      "id": "charbon-latte",
+      "name": "Charbon Latte",
+      "description": "Charbon actif, lait au choix, touche de vanille",
+      "price": 4.5,
+      "category": "drinks",
+      "image": "/images/menu/charbon-latte.jpg",
+      "tags": ["signature"],
+      "featured": false
+    },
+    {
+      "id": "jus-frais",
+      "name": "Jus Frais",
+      "description": "Orange, pomme, carotte ou mixte",
+      "price": 4,
+      "category": "drinks",
+      "image": "/images/menu/jus-frais.jpg",
+      "tags": ["vegan"],
+      "featured": false
+    },
+    {
+      "id": "tiramisu-pistache",
+      "name": "Tiramisu Pistache",
+      "description": "Tiramisu revisité à la pistache",
+      "price": 6,
+      "category": "desserts",
+      "image": "/images/menu/tiramisu-pistache.jpg",
+      "tags": [],
+      "featured": true
+    },
+    {
+      "id": "cookies",
+      "name": "Cookies Maison",
+      "description": "Pépites de chocolat ou double chocolat",
+      "price": 3,
+      "category": "desserts",
+      "image": "/images/menu/cookies.jpg",
+      "tags": [],
+      "featured": false
+    }
+  ],
+  "brunch": {
+    "name": "Menu Brunch",
+    "description": "Disponible tous les dimanches",
+    "price": 25,
+    "includes": [
+      "Un plat salé au choix",
+      "Un plat sucré (French Toast ou Granola)",
+      "Une boisson chaude (café ou thé)",
+      "Une boisson fraîche (jus pressé ou thé glacé maison)",
+      "Un amuse-bouche de bienvenue"
+    ]
+  }
+}

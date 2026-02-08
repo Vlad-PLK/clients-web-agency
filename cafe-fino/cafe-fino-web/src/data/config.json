@@ -1,0 +1,47 @@
+{
+  "locations": {
+    "nice": {
+      "name": "Nice",
+      "address": "39 Rue Gioffredo",
+      "city": "06000 Nice",
+      "phone": "04 93 79 58 17",
+      "hours": {
+        "weekdays": "9h - 18h",
+        "sunday": "9h - 17h"
+      },
+      "days": "Lun - Sam",
+      "mapUrl": "https://maps.app.goo.gl/xxxxx",
+      "coordinates": {
+        "lat": 43.6961,
+        "lng": 7.2714
+      }
+    },
+    "paris": {
+      "name": "Paris",
+      "address": "59 Rue des Mathurins",
+      "city": "75008 Paris",
+      "phone": "01 XX XX XX XX",
+      "hours": {
+        "weekdays": "8h - 18h",
+        "sunday": "9h - 17h"
+      },
+      "days": "Lun - Sam",
+      "mapUrl": "https://maps.app.goo.gl/xxxxx",
+      "coordinates": {
+        "lat": 48.8738,
+        "lng": 2.3277
+      }
+    }
+  },
+  "social": {
+    "instagram": "https://www.instagram.com/cafefinofrance/",
+    "instagramHandle": "@cafefinofrance",
+    "facebook": "",
+    "tripadvisor": "https://www.tripadvisor.fr/Restaurant_Review-g187234-d21021984-Reviews-Cafe_Fino-Nice_French_Riviera_Cote_d_Azur_Provence_Alpes_Cote_d_Azur.html"
+  },
+  "brand": {
+    "tagline": "Quality Food & Creative Drinks",
+    "description": "Dans la restauration depuis plus de 12 ans, nous sommes d'abord et avant tout des passionnés du café.",
+    "story": "En étroite collaboration avec un torréfacteur historique de Nice établi depuis 1925, nous créons les mélanges que nous utilisons pour préparer vos cafés à base d'Espresso ainsi que vos cafés filtres."
+  }
+}
