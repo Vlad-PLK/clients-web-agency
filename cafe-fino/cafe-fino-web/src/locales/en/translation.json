@@ -1,0 +1,309 @@
+{
+  "nav": {
+    "menu": "Menu",
+    "clickCollect": "Click & Collect",
+    "about": "Our Story",
+    "locations": "Locations",
+    "contact": "Contact",
+    "toggleMenu": "Toggle menu"
+  },
+  "brand": {
+    "tagline": "Quality Food & Creative Drinks"
+  },
+  "hero": {
+    "tagline": "Quality Food & Creative Drinks",
+    "imageAlt": "Café Fino selection"
+  },
+  "intro": {
+    "tagline": "Quality Food & Creative Drinks"
+  },
+  "loading": {
+    "tagline": "Quality Food & Creative Drinks",
+    "scroll": "Scroll"
+  },
+  "about": {
+    "title": "Our Story",
+    "imageAlt": "Inside Café Fino",
+    "description": "In the restaurant business for more than 12 years, we are first and foremost coffee lovers.",
+    "story": "In close collaboration with a historic roaster from Nice established in 1925, we craft the blends we use to prepare your espresso-based coffees as well as our filter coffees.",
+    "stats": {
+      "years": "Years",
+      "roaster": "Roaster",
+      "locations": "Locations"
+    }
+  },
+  "menu": {
+    "title": "Menu",
+    "subtitle": "Fresh seasonal dishes, prepared with passion every day.",
+    "dailySpecial": "Daily special",
+    "add": "Add",
+    "signature": "Signature",
+    "vegan": "Vegan",
+    "categories": {
+      "breakfast": "Breakfast",
+      "brunch": "Brunch",
+      "lunch": "Lunch",
+      "drinks": "Drinks",
+      "desserts": "Desserts"
+    },
+    "filters": {
+      "vegetarian": "Vegetarian",
+      "vegan": "Vegan",
+      "gluten-free": "Gluten free"
+    },
+    "dietary": {
+      "vegetarian": "Vegetarian",
+      "vegan": "Vegan",
+      "gluten-free": "Gluten free"
+    },
+    "allergensLabel": "Allergens",
+    "allergens": {
+      "gluten": "Gluten",
+      "dairy": "Milk",
+      "eggs": "Eggs",
+      "nuts": "Tree nuts",
+      "fish": "Fish",
+      "shellfish": "Shellfish",
+      "sesame": "Sesame",
+      "soy": "Soy"
+    },
+    "brunch": {
+      "title": "Brunch Menu",
+      "description": "Available every Sunday",
+      "includes": [
+        "One savory dish of your choice",
+        "One sweet dish (French toast or granola)",
+        "One hot drink (coffee or tea)",
+        "One cold drink (fresh juice or house iced tea)",
+        "A welcome amuse-bouche"
+      ]
+    },
+    "items": {
+      "brinos-avocat": {
+        "description": "Toasted brioche, fresh avocado, fried egg, sprouts"
+      },
+      "brinos-saumon": {
+        "description": "Toasted brioche, smoked salmon, cream cheese, capers"
+      },
+      "brinos-poulet": {
+        "description": "Toasted brioche, grilled chicken, avocado, house sauce"
+      },
+      "avocat-toast": {
+        "description": "Country bread, smashed avocado, poached egg, seeds"
+      },
+      "egg-muffin": {
+        "description": "Flaky croissant, scrambled eggs, melted cheddar"
+      },
+      "granola": {
+        "description": "Caramelized granola, Greek yogurt, seasonal fresh fruit"
+      },
+      "avocat-teriyaki": {
+        "description": "Teriyaki-style avocado, poached egg, sesame"
+      },
+      "salade-gambas": {
+        "description": "Grilled prawns, tomatoes, rice, hazelnuts, pomegranate"
+      },
+      "salade-fenouil": {
+        "description": "Fennel, walnuts, beans, soft-boiled egg, citrus vinaigrette"
+      },
+      "latte": {
+        "description": "Espresso, frothed milk of your choice"
+      },
+      "cappuccino": {
+        "description": "Espresso, silky milk foam"
+      },
+      "cafe-fino": {
+        "description": "Espresso, house vanilla purée, milk"
+      },
+      "chai-latte": {
+        "description": "Spiced chai tea, steamed milk"
+      },
+      "matcha-clementine": {
+        "description": "Matcha tea, clementine, coconut milk"
+      },
+      "charbon-latte": {
+        "description": "Activated charcoal, milk of your choice, hint of vanilla"
+      },
+      "jus-frais": {
+        "description": "Orange, apple, carrot or mixed"
+      },
+      "tiramisu-pistache": {
+        "description": "Pistachio tiramisu twist"
+      },
+      "cookies": {
+        "description": "Chocolate chip or double chocolate"
+      }
+    },
+    "specials": {
+      "espresso-tonic": {
+        "description": "Signature espresso, artisanal tonic, orange zest"
+      },
+      "croque-comte": {
+        "description": "Country bread, truffled ham, aged Comté"
+      },
+      "tarte-choco-orange": {
+        "description": "Dark ganache, orange confit, hazelnut shortbread"
+      }
+    }
+  },
+  "clickCollect": {
+    "badge": "Click & Collect",
+    "title": "Express Order",
+    "description": "Select your favorites, choose your time slot, and pick up your order at one of our locations in Nice or Paris.",
+    "cartTitle": "Your Cart",
+    "cartEmpty": "Add a few treats to get started.",
+    "subtotal": "Subtotal",
+    "tax": "Estimated VAT",
+    "total": "Total",
+    "slotTitle": "Time Slot & Location",
+    "pickupPoint": "Pickup location",
+    "pickupSlot": "Pickup time",
+    "pickupAt": "Pickup at {{address}}, {{city}}.",
+    "checkoutTitle": "Complete your order",
+    "namePlaceholder": "Full name",
+    "emailPlaceholder": "Email",
+    "phonePlaceholder": "Phone",
+    "notePlaceholder": "Comment or preference",
+    "confirm": "Confirm order",
+    "paymentNote": "Payment on site or online when the platform launches."
+  },
+  "locations": {
+    "title": "Our Locations",
+    "subtitle": "Two signature places to welcome you in Nice and Paris.",
+    "imageAlt": "Café Fino {{city}}",
+    "shortName": {
+      "nice": "Nice",
+      "paris": "Paris"
+    },
+    "days": {
+      "nice": "Mon - Sat",
+      "paris": "Mon - Sat"
+    }
+  },
+  "instagram": {
+    "cta": "Follow us to discover our latest creations.",
+    "postAlt": {
+      "table": "Café Fino gourmet table",
+      "breakfast": "Breakfast for two",
+      "barista": "Café Fino barista",
+      "latteArt": "Signature latte art",
+      "dessert": "Gourmet dessert",
+      "granola": "Homemade granola"
+    }
+  },
+  "footer": {
+    "contact": "Contact",
+    "rights": "All rights reserved.",
+    "credit": "Site crafted by"
+  },
+  "slider": {
+    "previous": "Previous",
+    "next": "Next",
+    "items": {
+      "brino-avocat": {
+        "title": "Avocado Brino",
+        "subtitle": "Toasted brioche, fresh avocado, fried egg"
+      },
+      "brino-viande": {
+        "title": "Minced Meat Brino",
+        "subtitle": "Gourmet brioche, house minced meat"
+      },
+      "brioche-fraise-chocolat": {
+        "title": "Strawberry & Chocolate Brioche",
+        "subtitle": "Sweet treat with red berries"
+      },
+      "latte-art": {
+        "title": "Latte Art",
+        "subtitle": "Coffee artistry by our baristas"
+      },
+      "cafefino-exterieur": {
+        "title": "Our Terrace",
+        "subtitle": "Enjoy the Nice sunshine"
+      },
+      "service-barista": {
+        "title": "Barista Service",
+        "subtitle": "Passion and expertise"
+      },
+      "croissant-oeufs-1": {
+        "title": "Egg Croissant",
+        "subtitle": "Crispy pastry, melting eggs"
+      },
+      "croissant-brouilles": {
+        "title": "Scrambled Eggs",
+        "subtitle": "Golden croissant, creamy eggs"
+      },
+      "croissant-brouilles-2": {
+        "title": "Gourmet Scrambled Eggs",
+        "subtitle": "Our classic reimagined"
+      },
+      "brunch-deux": {
+        "title": "Brunch for Two",
+        "subtitle": "A gourmet moment to share"
+      },
+      "table-famille": {
+        "title": "Family Table",
+        "subtitle": "For larger gatherings"
+      },
+      "duo-granola-avocat": {
+        "title": "Granola & Avocado Duo",
+        "subtitle": "Perfect sweet-savory balance"
+      },
+      "granola-fruits": {
+        "title": "Fruit Granola",
+        "subtitle": "Fresh and indulgent"
+      },
+      "trio-avocat": {
+        "title": "Avocado Toast Trio",
+        "subtitle": "Three ways to enjoy avocado"
+      },
+      "oeuf-hollandaise": {
+        "title": "Eggs Hollandaise",
+        "subtitle": "Refined brunch classic"
+      },
+      "cappuccino": {
+        "title": "Signature Cappuccino",
+        "subtitle": "Silky foam, intense coffee"
+      },
+      "interieur-1": {
+        "title": "Our Interior",
+        "subtitle": "Warm and modern ambiance"
+      },
+      "interieur-2": {
+        "title": "Cozy Space",
+        "subtitle": "Relaxation and comfort"
+      },
+      "instant-signature": {
+        "title": "Café Fino Moment",
+        "subtitle": "Capture the moment"
+      },
+      "terrasse": {
+        "title": "Nice Terrace",
+        "subtitle": "In the heart of the city"
+      },
+      "purple-latte": {
+        "title": "Purple Latte",
+        "subtitle": "Colorful signature creation"
+      },
+      "avocado-simple": {
+        "title": "Simple Avocado Toast",
+        "subtitle": "The essentials, perfectly executed"
+      },
+      "croissant-smashe": {
+        "title": "Smashed Croissant",
+        "subtitle": "Gourmet crushed croissant"
+      },
+      "brino-original": {
+        "title": "The Original Brino",
+        "subtitle": "Our signature creation"
+      },
+      "brino-gourmet": {
+        "title": "Gourmet Brino",
+        "subtitle": "Generous and refined version"
+      },
+      "saumon-legumes": {
+        "title": "Salmon & Vegetables",
+        "subtitle": "Fresh and light"
+      }
+    }
+  }
+}

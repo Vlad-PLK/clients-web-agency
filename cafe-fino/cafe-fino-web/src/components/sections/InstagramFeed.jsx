@@ -1,23 +1,44 @@
+import { motion } from 'framer-motion';
+import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { motion, useInView } from 'framer-motion';
 import { Instagram } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import config from '../../data/config.json';
 
 export default function InstagramFeed() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
-
-  // Placeholder images - replace with actual Instagram feed integration
-  const placeholderImages = Array.from({ length: 6 }, (_, i) => ({
-    id: i + 1,
-    url: `https://placehold.co/400x400/F5E6E0/C4A484?text=IG+${i + 1}`,
-    alt: `Café Fino Instagram post ${i + 1}`,
-  }));
+  const { t } = useTranslation();
+  const posts = [
+    {
+      src: '/images/cafefino-coffeecup-latteart.jpg',
+      altKey: 'table',
+    },
+    {
+      src: '/images/purplelatte.jpg',
+      altKey: 'breakfast',
+    },
+    {
+      src: '/images/briochefraiseetchocolat.jpg',
+      altKey: 'barista',
+    },
+    {
+      src: '/images/granolafruits.jpg',
+      altKey: 'latteArt',
+    },
+    {
+      src: '/images/veggiesandsalmon.jpg',
+      altKey: 'dessert',
+    },
+    {
+      src: '/images/simpleavocadotoast.jpg',
+      altKey: 'granola',
+    },
+  ];
 
   return (
-    <section className="py-24 px-6 bg-cream" ref={ref}>
+    <section className="py-24 px-6 bg-cream gsap-reveal" ref={ref}>
       <div className="max-w-6xl mx-auto">
-        {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -25,66 +46,42 @@ export default function InstagramFeed() {
           className="text-center mb-12"
         >
           <div className="flex items-center justify-center gap-3 mb-4">
-            <Instagram className="w-6 h-6 text-terracotta" />
+            <Instagram className="w-6 h-6 text-warm-gold" />
             <a
               href={config.social.instagram}
               target="_blank"
               rel="noopener noreferrer"
-              className="font-display text-2xl text-charcoal hover:text-terracotta transition-colors"
+              className="font-display text-2xl text-charcoal hover:text-warm-gold transition-colors"
             >
               {config.social.instagramHandle}
             </a>
           </div>
-          <p className="text-warm-gray">
-            Suivez nos aventures quotidiennes sur Instagram
+          <p className="text-mocha">
+            {t('instagram.cta')}
           </p>
         </motion.div>
 
         {/* Instagram Grid */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4"
-        >
-          {placeholderImages.map((image, index) => (
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+          {posts.map((post, index) => (
             <motion.a
-              key={image.id}
+              key={post.src}
               href={config.social.instagram}
               target="_blank"
               rel="noopener noreferrer"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={isInView ? { opacity: 1, scale: 1 } : {}}
-              transition={{ duration: 0.4, delay: index * 0.05 }}
-              className="aspect-square rounded-lg overflow-hidden group"
+              transition={{ duration: 0.4, delay: index * 0.1 }}
+              className="aspect-square bg-cream/80 rounded-xl overflow-hidden group border border-espresso/10"
             >
               <img
-                src={image.url}
-                alt={image.alt}
+                src={post.src}
+                alt={t(`instagram.postAlt.${post.altKey}`)}
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                loading="lazy"
               />
             </motion.a>
           ))}
-        </motion.div>
-
-        {/* CTA */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="text-center mt-8"
-        >
-          <a
-            href={config.social.instagram}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-primary inline-flex items-center gap-2"
-          >
-            <Instagram size={18} />
-            Suivez-nous
-          </a>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

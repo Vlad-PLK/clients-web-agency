@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -10,7 +10,7 @@
   }
   
   body {
-    @apply bg-warm-white text-charcoal font-body;
+    @apply bg-cream text-charcoal font-body;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -29,25 +29,25 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    @apply bg-terracotta rounded-full;
+    @apply bg-warm-gold rounded-full;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    @apply bg-charcoal;
+    @apply bg-espresso;
   }
 }
 
 @layer components {
   .btn-primary {
-    @apply bg-terracotta text-white px-8 py-3 rounded font-body font-semibold uppercase tracking-wider text-sm;
+    @apply bg-espresso text-cream px-8 py-3 rounded font-body font-semibold uppercase tracking-wider text-sm;
     @apply transition-all duration-300 ease-smooth;
-    @apply hover:bg-charcoal hover:-translate-y-0.5;
+    @apply hover:bg-mocha hover:-translate-y-0.5 hover:shadow-lg;
   }
 
   .btn-outline {
-    @apply bg-transparent border border-charcoal text-charcoal px-8 py-3 rounded font-body font-semibold uppercase tracking-wider text-sm;
+    @apply bg-transparent border border-espresso text-espresso px-8 py-3 rounded font-body font-semibold uppercase tracking-wider text-sm;
     @apply transition-all duration-300 ease-smooth;
-    @apply hover:bg-charcoal hover:text-white;
+    @apply hover:bg-espresso hover:text-cream;
   }
 
   .section-title {
@@ -57,17 +57,17 @@
   .nav-link {
     @apply font-body text-sm font-medium uppercase tracking-wider text-charcoal;
     @apply transition-colors duration-300;
-    @apply hover:text-terracotta;
+    @apply hover:text-warm-gold;
   }
 
   .card {
-    @apply bg-white rounded-xl overflow-hidden shadow-lg;
+    @apply bg-cream/80 rounded-2xl overflow-hidden shadow-lg;
     @apply transition-transform duration-300 ease-smooth;
-    @apply hover:-translate-y-2;
+    @apply hover:-translate-y-2 hover:shadow-2xl;
   }
 
   .menu-card {
-    @apply card;
+    @apply card border border-espresso/10;
   }
 
   .menu-card-image {
@@ -79,20 +79,24 @@
   }
 
   .menu-card-title {
-    @apply font-display text-lg font-semibold mb-1;
+    @apply font-display text-lg font-semibold mb-1 text-charcoal;
   }
 
   .menu-card-description {
-    @apply text-warm-gray text-sm mb-2;
+    @apply text-mocha text-sm mb-2;
   }
 
   .menu-card-price {
-    @apply text-terracotta font-semibold;
+    @apply text-warm-gold font-semibold;
+  }
+
+  .tag-chip {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-xs uppercase tracking-wider font-semibold;
   }
 
   /* Location Toggle */
   .location-toggle {
-    @apply inline-flex bg-powder-pink rounded-full p-1;
+    @apply inline-flex bg-cream/80 border border-espresso/10 rounded-full p-1;
   }
 
   .location-toggle-btn {
@@ -101,11 +105,11 @@
   }
 
   .location-toggle-btn.active {
-    @apply bg-terracotta text-white;
+    @apply bg-espresso text-cream;
   }
 
   .location-toggle-btn:not(.active) {
-    @apply text-charcoal hover:text-terracotta;
+    @apply text-charcoal hover:text-warm-gold;
   }
 
   /* Food Slider */
@@ -119,7 +123,7 @@
   }
 
   .slider-item {
-    @apply relative flex-shrink-0 w-64 h-64 rounded-xl overflow-hidden cursor-pointer;
+    @apply relative flex-shrink-0 w-64 h-64 rounded-2xl overflow-hidden cursor-pointer;
     @apply transition-transform duration-300;
     @apply hover:scale-105;
   }
@@ -129,17 +133,64 @@
   }
 
   .slider-item-overlay {
-    @apply absolute inset-0 bg-gradient-to-t from-black/60 to-transparent;
+    @apply absolute inset-0 bg-gradient-to-t from-espresso/70 to-transparent;
     @apply flex items-end p-4;
   }
 
   .slider-item-title {
-    @apply text-white font-display text-xl;
+    @apply text-cream font-display text-xl;
+  }
+
+  /* Coffee Steam */
+  .steam {
+    @apply absolute bottom-full left-1/2 -translate-x-1/2;
+  }
+
+  .steam span {
+    @apply block w-2 h-10 rounded-full bg-cream/60 blur-sm;
+    animation: steamRise 2.6s ease-in-out infinite;
+  }
+
+  .steam span:nth-child(2) {
+    animation-delay: 0.4s;
+    transform: translateX(10px);
+  }
+
+  .steam span:nth-child(3) {
+    animation-delay: 0.8s;
+    transform: translateX(-10px);
+  }
+
+  .coffee-pour {
+    animation: pour 1.6s ease-in-out infinite;
   }
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@keyframes steamRise {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 10px);
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -25px);
+  }
+}
+
+@keyframes pour {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(6px);
   }
 }

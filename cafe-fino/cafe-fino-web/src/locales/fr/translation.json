@@ -1,0 +1,309 @@
+{
+  "nav": {
+    "menu": "La Carte",
+    "clickCollect": "Click & Collect",
+    "about": "Notre Histoire",
+    "locations": "Adresses",
+    "contact": "Contact",
+    "toggleMenu": "Ouvrir le menu"
+  },
+  "brand": {
+    "tagline": "Cuisine de qualité & boissons créatives"
+  },
+  "hero": {
+    "tagline": "Cuisine de qualité & boissons créatives",
+    "imageAlt": "Sélection Café Fino"
+  },
+  "intro": {
+    "tagline": "Cuisine de qualité & boissons créatives"
+  },
+  "loading": {
+    "tagline": "Cuisine de qualité & boissons créatives",
+    "scroll": "Défiler"
+  },
+  "about": {
+    "title": "Notre Histoire",
+    "imageAlt": "L'intérieur de Café Fino",
+    "description": "Dans la restauration depuis plus de 12 ans, nous sommes d'abord et avant tout des passionnés du café.",
+    "story": "En étroite collaboration avec un torréfacteur historique de Nice établi depuis 1925, nous créons les mélanges que nous utilisons pour préparer vos cafés à base d'Espresso ainsi que vos cafés filtres.",
+    "stats": {
+      "years": "Années",
+      "roaster": "Torréfacteur",
+      "locations": "Adresses"
+    }
+  },
+  "menu": {
+    "title": "La Carte",
+    "subtitle": "Des plats frais et de saison, préparés avec passion chaque jour.",
+    "dailySpecial": "Spécial du jour",
+    "add": "Ajouter",
+    "signature": "Signature",
+    "vegan": "Vegan",
+    "categories": {
+      "breakfast": "Petit Déjeuner",
+      "brunch": "Brunch",
+      "lunch": "Déjeuner",
+      "drinks": "Boissons",
+      "desserts": "Desserts"
+    },
+    "filters": {
+      "vegetarian": "Végétarien",
+      "vegan": "Vegan",
+      "gluten-free": "Sans gluten"
+    },
+    "dietary": {
+      "vegetarian": "Végétarien",
+      "vegan": "Vegan",
+      "gluten-free": "Sans gluten"
+    },
+    "allergensLabel": "Allergènes",
+    "allergens": {
+      "gluten": "Gluten",
+      "dairy": "Lait",
+      "eggs": "Œufs",
+      "nuts": "Fruits à coque",
+      "fish": "Poisson",
+      "shellfish": "Crustacés",
+      "sesame": "Sésame",
+      "soy": "Soja"
+    },
+    "brunch": {
+      "title": "Menu Brunch",
+      "description": "Disponible tous les dimanches",
+      "includes": [
+        "Un plat salé au choix",
+        "Un plat sucré (French Toast ou Granola)",
+        "Une boisson chaude (café ou thé)",
+        "Une boisson fraîche (jus pressé ou thé glacé maison)",
+        "Un amuse-bouche de bienvenue"
+      ]
+    },
+    "items": {
+      "brinos-avocat": {
+        "description": "Brioche toastée, avocat frais, œuf au plat, pousses"
+      },
+      "brinos-saumon": {
+        "description": "Brioche toastée, saumon fumé, cream cheese, câpres"
+      },
+      "brinos-poulet": {
+        "description": "Brioche toastée, poulet grillé, avocat, sauce maison"
+      },
+      "avocat-toast": {
+        "description": "Pain de campagne, avocat écrasé, œuf poché, graines"
+      },
+      "egg-muffin": {
+        "description": "Croissant feuilleté, œufs brouillés, cheddar fondant"
+      },
+      "granola": {
+        "description": "Granola caramélisé, yaourt grec, fruits frais de saison"
+      },
+      "avocat-teriyaki": {
+        "description": "Avocat cuit façon Teriyaki, œuf poché, sésame"
+      },
+      "salade-gambas": {
+        "description": "Gambas grillées, tomates, riz, noisettes, grenade"
+      },
+      "salade-fenouil": {
+        "description": "Fenouil, noix, haricots, œuf mollet, vinaigrette agrumes"
+      },
+      "latte": {
+        "description": "Espresso, lait moussé au choix"
+      },
+      "cappuccino": {
+        "description": "Espresso, mousse de lait onctueuse"
+      },
+      "cafe-fino": {
+        "description": "Espresso, purée de vanille maison, lait"
+      },
+      "chai-latte": {
+        "description": "Thé chai épicé, lait moussé"
+      },
+      "matcha-clementine": {
+        "description": "Thé matcha, clémentine, lait de coco"
+      },
+      "charbon-latte": {
+        "description": "Charbon actif, lait au choix, touche de vanille"
+      },
+      "jus-frais": {
+        "description": "Orange, pomme, carotte ou mixte"
+      },
+      "tiramisu-pistache": {
+        "description": "Tiramisu revisité à la pistache"
+      },
+      "cookies": {
+        "description": "Pépites de chocolat ou double chocolat"
+      }
+    },
+    "specials": {
+      "espresso-tonic": {
+        "description": "Espresso signature, tonic artisanal, zeste d'orange"
+      },
+      "croque-comte": {
+        "description": "Pain de campagne, jambon truffé, comté affiné"
+      },
+      "tarte-choco-orange": {
+        "description": "Ganache noire, confit d'orange, sablé aux noisettes"
+      }
+    }
+  },
+  "clickCollect": {
+    "badge": "Click & Collect",
+    "title": "Commande Express",
+    "description": "Sélectionnez vos favoris, choisissez votre créneau et récupérez votre commande dans l'une de nos adresses à Nice ou Paris.",
+    "cartTitle": "Votre Panier",
+    "cartEmpty": "Ajoutez quelques douceurs pour commencer.",
+    "subtotal": "Sous-total",
+    "tax": "TVA estimée",
+    "total": "Total",
+    "slotTitle": "Créneau & Adresse",
+    "pickupPoint": "Point de retrait",
+    "pickupSlot": "Créneau de retrait",
+    "pickupAt": "Retrait à {{address}}, {{city}}.",
+    "checkoutTitle": "Finaliser la commande",
+    "namePlaceholder": "Nom complet",
+    "emailPlaceholder": "Email",
+    "phonePlaceholder": "Téléphone",
+    "notePlaceholder": "Commentaire ou préférence",
+    "confirm": "Confirmer la commande",
+    "paymentNote": "Paiement sur place ou en ligne lors de l'ouverture de la plateforme."
+  },
+  "locations": {
+    "title": "Nos Adresses",
+    "subtitle": "Deux lieux emblématiques pour vous accueillir à Nice et Paris.",
+    "imageAlt": "Café Fino {{city}}",
+    "shortName": {
+      "nice": "Nice",
+      "paris": "Paris"
+    },
+    "days": {
+      "nice": "Lun - Sam",
+      "paris": "Lun - Sam"
+    }
+  },
+  "instagram": {
+    "cta": "Suivez-nous pour découvrir nos dernières créations.",
+    "postAlt": {
+      "table": "Table gourmande Café Fino",
+      "breakfast": "Petit déjeuner à deux",
+      "barista": "Barista Café Fino",
+      "latteArt": "Latte art signature",
+      "dessert": "Dessert gourmand",
+      "granola": "Granola maison"
+    }
+  },
+  "footer": {
+    "contact": "Contact",
+    "rights": "Tous droits réservés.",
+    "credit": "Site réalisé par"
+  },
+  "slider": {
+    "previous": "Précédent",
+    "next": "Suivant",
+    "items": {
+      "brino-avocat": {
+        "title": "Brino Avocat",
+        "subtitle": "Brioche toastée, avocat frais, œuf au plat"
+      },
+      "brino-viande": {
+        "title": "Brino Viande Hachée",
+        "subtitle": "Brioche gourmande, viande hachée maison"
+      },
+      "brioche-fraise-chocolat": {
+        "title": "Brioche Fraise & Chocolat",
+        "subtitle": "Douceur sucrée aux fruits rouges"
+      },
+      "latte-art": {
+        "title": "Latte Art",
+        "subtitle": "L'art du café par nos baristas"
+      },
+      "cafefino-exterieur": {
+        "title": "Notre Terrasse",
+        "subtitle": "Profitez du soleil niçois"
+      },
+      "service-barista": {
+        "title": "Service Barista",
+        "subtitle": "Passion et savoir-faire"
+      },
+      "croissant-oeufs-1": {
+        "title": "Croissant aux Œufs",
+        "subtitle": "Feuilleté croustillant, œufs fondants"
+      },
+      "croissant-brouilles": {
+        "title": "Œufs Brouillés",
+        "subtitle": "Croissant doré, œufs crémeux"
+      },
+      "croissant-brouilles-2": {
+        "title": "Œufs Brouillés Gourmand",
+        "subtitle": "Notre classique revisité"
+      },
+      "brunch-deux": {
+        "title": "Brunch à Deux",
+        "subtitle": "Moment de partage gourmand"
+      },
+      "table-famille": {
+        "title": "Table Conviviale",
+        "subtitle": "Pour les grandes tablées"
+      },
+      "duo-granola-avocat": {
+        "title": "Duo Granola & Avocat",
+        "subtitle": "Équilibre sucré-salé parfait"
+      },
+      "granola-fruits": {
+        "title": "Granola aux Fruits",
+        "subtitle": "Fraîcheur et gourmandise"
+      },
+      "trio-avocat": {
+        "title": "Trio Avocat Toast",
+        "subtitle": "Trois façons de savourer l'avocat"
+      },
+      "oeuf-hollandaise": {
+        "title": "Œuf Mollet Hollandaise",
+        "subtitle": "Classique brunch raffiné"
+      },
+      "cappuccino": {
+        "title": "Cappuccino Signature",
+        "subtitle": "Mousse onctueuse, café intense"
+      },
+      "interieur-1": {
+        "title": "Notre Intérieur",
+        "subtitle": "Ambiance chaleureuse et moderne"
+      },
+      "interieur-2": {
+        "title": "Espace Cosy",
+        "subtitle": "Détente et confort"
+      },
+      "instant-signature": {
+        "title": "Instant Café Fino",
+        "subtitle": "Capturez le moment"
+      },
+      "terrasse": {
+        "title": "Terrasse Nice",
+        "subtitle": "Au cœur de la ville"
+      },
+      "purple-latte": {
+        "title": "Purple Latte",
+        "subtitle": "Création colorée signature"
+      },
+      "avocado-simple": {
+        "title": "Avocat Toast Simple",
+        "subtitle": "L'essentiel, parfaitement exécuté"
+      },
+      "croissant-smashe": {
+        "title": "Smashed Croissant",
+        "subtitle": "Croissant écrasé gourmand"
+      },
+      "brino-original": {
+        "title": "Le Brino Original",
+        "subtitle": "Notre création signature"
+      },
+      "brino-gourmet": {
+        "title": "Brino Gourmet",
+        "subtitle": "Version généreuse et raffinée"
+      },
+      "saumon-legumes": {
+        "title": "Saumon & Légumes",
+        "subtitle": "Fraîcheur et légèreté"
+      }
+    }
+  }
+}

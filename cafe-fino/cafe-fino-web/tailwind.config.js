@@ -7,19 +7,17 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Café Fino Brand Colors
-        'powder-pink': '#F5E6E0',
-        'warm-white': '#FDFBF9',
-        'terracotta': '#C4A484',
-        'charcoal': '#2D2D2D',
-        'warm-gray': '#6B6B6B',
-        'sage': '#B8C9B8',
-        'cream': '#FAF8F5',
+        // Café Fino Heritage Palette
+        espresso: '#4A2C20',
+        mocha: '#6B4A3A',
+        cream: '#F5EDE2',
+        'warm-gold': '#C9A227',
+        charcoal: '#2B2B2B',
       },
       fontFamily: {
-        'display': ['"Playfair Display"', 'serif'],
-        'body': ['Inter', 'sans-serif'],
-        'accent': ['"Cormorant Garamond"', 'serif'],
+        display: ['"Playfair Display"', 'serif'],
+        body: ['"Source Sans 3"', 'sans-serif'],
+        accent: ['"Source Sans 3"', 'sans-serif'],
       },
       fontSize: {
         'hero': ['4.5rem', { lineHeight: '1.1', letterSpacing: '-0.02em' }],

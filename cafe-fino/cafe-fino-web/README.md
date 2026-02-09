@@ -1,16 +1,54 @@
-# React + Vite
+# Cafe Fino Web
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Single-page React site for Cafe Fino (Nice + Paris). Built with Vite, Tailwind, GSAP/Framer animations, and local JSON content.
 
-Currently, two official plugins are available:
+## Quick Start
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```bash
+npm install
+npm run dev
+```
 
-## React Compiler
+## Scripts
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- `npm run dev`: local dev server
+- `npm run build`: production build
+- `npm run preview`: preview production build
+- `npm run lint`: ESLint
 
-## Expanding the ESLint configuration
+## Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [index.html](index.html): root shell
+- [src/main.jsx](src/main.jsx): React mount + i18n init
+- [src/App.jsx](src/App.jsx): section composition
+- [src/components/layout](src/components/layout): intro, navbar, footer
+- [src/components/sections](src/components/sections): page sections
+- [src/data/config.json](src/data/config.json): locations + brand + socials
+- [src/data/menu.json](src/data/menu.json): menu categories/items/specials
+- [src/locales](src/locales): i18n translations
+- [src/store/useCartStore.js](src/store/useCartStore.js): cart state
+- [src/index.css](src/index.css): global styles + Tailwind utilities
+
+## Core Stack
+
+- React 19 + Vite 7
+- TailwindCSS + PostCSS
+- GSAP + Framer Motion
+- i18next + react-i18next
+- Zustand (cart)
+
+## Docs
+
+- [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)
+- [docs/DATA_MODEL.md](docs/DATA_MODEL.md)
+- [docs/I18N.md](docs/I18N.md)
+- [docs/AI_PLAYBOOK.md](docs/AI_PLAYBOOK.md)
+- [docs/QUALITY_CHECKS.md](docs/QUALITY_CHECKS.md)
+- [docs/DEPLOYMENT_VPS.md](docs/DEPLOYMENT_VPS.md)
+- [docs/ROADMAP_ORDERING.md](docs/ROADMAP_ORDERING.md)
+
+## Notes
+
+- This is a single-page site (no router).
+- Menu and location content is file-based for now.
+- Click & Collect is UI-only; it is ready for API integration.
