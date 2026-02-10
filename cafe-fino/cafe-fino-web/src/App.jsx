@@ -1,16 +1,16 @@
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import IntroAnimation from './components/layout/IntroAnimation';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
-import Hero from './components/sections/Hero';
+import HeroSection from './components/sections/HeroSection/HeroSection';
 import FoodSlider from './components/sections/FoodSlider';
 import About from './components/sections/About';
 import Menu from './components/sections/Menu';
 import ClickCollect from './components/sections/ClickCollect';
 import Locations from './components/sections/Locations';
 import InstagramFeed from './components/sections/InstagramFeed';
+import { ToastProvider } from './components/ui/Toast';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -35,12 +35,11 @@ function App() {
   }, []);
 
   return (
-    <>
-      <IntroAnimation />
+    <ToastProvider>
       <Navbar />
-      
+
       <main>
-        <Hero />
+        <HeroSection />
         <FoodSlider />
         <About />
         <Menu />
@@ -48,9 +47,9 @@ function App() {
         <Locations />
         <InstagramFeed />
       </main>
-      
+
       <Footer />
-    </>
+    </ToastProvider>
   );
 }
 

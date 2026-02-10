@@ -37,6 +37,15 @@ npm run dev
 - i18next + react-i18next
 - Zustand (cart)
 
+## Animation & Interaction Guide
+
+- Intro cascade animation: `IntroAnimationV2.jsx` (GSAP timeline, 3s total).
+- Scroll reveals: section-level `useInView` with gentle fade + lift.
+- Menu card hovers: lift/underline + image cycling on hover.
+- Image zoom modals: Framer Motion + keyboard controls (ESC/arrow).
+- Toast notifications: `src/components/ui/Toast.jsx` provider + `useToast`.
+- Loading states: skeleton utilities in `src/index.css`.
+
 ## Docs
 
 - [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)

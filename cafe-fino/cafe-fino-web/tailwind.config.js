@@ -7,12 +7,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Café Fino Heritage Palette
-        espresso: '#4A2C20',
-        mocha: '#6B4A3A',
-        cream: '#F5EDE2',
-        'warm-gold': '#C9A227',
-        charcoal: '#2B2B2B',
+        // Café Fino Coffee-Bean Palette
+        'deep-roast': '#1a1410',
+        'espresso-dark': '#2d2420',
+        'coffee-brown': '#4a3728',
+        'cafe-cream': '#f8f6f2',
+        ivory: '#fefdfb',
+        'crema-gold': '#d4a574',
+        'ash-grey': '#6b6b69',
       },
       fontFamily: {
         display: ['"Playfair Display"', 'serif'],

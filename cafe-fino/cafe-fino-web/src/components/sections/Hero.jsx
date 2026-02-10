@@ -38,7 +38,7 @@ export default function Hero() {
           alt={t('hero.imageAlt')}
           className="w-full h-full object-cover opacity-35"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-cream/70 via-cream/80 to-cream" />
+        <div className="absolute inset-0 bg-gradient-to-b from-cafe-cream/70 via-cafe-cream/80 to-cafe-cream" />
       </div>
       
       <div className="relative text-center max-w-4xl mx-auto">
@@ -61,7 +61,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
-          className="font-accent text-xl md:text-2xl text-mocha italic mb-12"
+          className="font-accent text-xl md:text-2xl text-ash-grey italic mb-12"
         >
           {t('hero.tagline')}
         </motion.p>
@@ -93,16 +93,16 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.4 }}
-          className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 text-mocha"
+          className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 text-ash-grey"
         >
           <div className="flex items-center gap-2">
             <span className="font-medium">{location.hours.weekdays}</span>
           </div>
-          <span className="hidden md:block text-warm-gold">•</span>
+          <span className="hidden md:block text-crema-gold">•</span>
           <div className="flex items-center gap-2">
             <span>{t(`locations.days.${activeLocation}`)}</span>
           </div>
-          <span className="hidden md:block text-warm-gold">•</span>
+          <span className="hidden md:block text-crema-gold">•</span>
           <div className="flex items-center gap-2">
             <span>{location.address}, {location.city.split(' ')[1]}</span>
           </div>
@@ -122,13 +122,13 @@ export default function Hero() {
             <span />
             <span />
           </div>
-          <div className="w-10 h-8 border-2 border-espresso rounded-b-xl rounded-t-md bg-cream shadow-lg" />
-          <div className="absolute right-[-10px] top-1 w-4 h-4 border-2 border-espresso rounded-full" />
+          <div className="w-10 h-8 border-2 border-espresso-dark rounded-b-xl rounded-t-md bg-cafe-cream shadow-lg" />
+          <div className="absolute right-[-10px] top-1 w-4 h-4 border-2 border-espresso-dark rounded-full" />
         </div>
         <motion.div
           animate={{ y: [0, 8, 0] }}
           transition={{ duration: 2, repeat: Infinity }}
-          className="text-warm-gold"
+          className="text-crema-gold"
         >
           <svg 
             className="w-5 h-5"

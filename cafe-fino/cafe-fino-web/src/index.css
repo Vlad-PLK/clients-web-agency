@@ -4,13 +4,23 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --color-deep-roast: #1a1410;
+  --color-espresso-dark: #2d2420;
+  --color-coffee-brown: #4a3728;
+  --color-cafe-cream: #f8f6f2;
+  --color-ivory: #fefdfb;
+  --color-crema-gold: #d4a574;
+  --color-ash-grey: #6b6b69;
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;
   }
   
   body {
-    @apply bg-cream text-charcoal font-body;
+    @apply bg-cafe-cream text-deep-roast font-body;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -29,45 +39,46 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    @apply bg-warm-gold rounded-full;
+    @apply bg-crema-gold rounded-full;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    @apply bg-espresso;
+    @apply bg-deep-roast;
   }
 }
 
 @layer components {
   .btn-primary {
-    @apply bg-espresso text-cream px-8 py-3 rounded font-body font-semibold uppercase tracking-wider text-sm;
-    @apply transition-all duration-300 ease-smooth;
-    @apply hover:bg-mocha hover:-translate-y-0.5 hover:shadow-lg;
+    @apply bg-crema-gold text-espresso-dark px-8 py-3 rounded font-body font-semibold uppercase tracking-wider text-sm;
+    @apply transition-all duration-300 ease-out;
+    @apply hover:bg-coffee-brown hover:text-ivory hover:shadow-lg hover:scale-105;
+    @apply active:scale-95;
   }
 
   .btn-outline {
-    @apply bg-transparent border border-espresso text-espresso px-8 py-3 rounded font-body font-semibold uppercase tracking-wider text-sm;
+    @apply bg-transparent border border-espresso-dark text-espresso-dark px-8 py-3 rounded font-body font-semibold uppercase tracking-wider text-sm;
     @apply transition-all duration-300 ease-smooth;
-    @apply hover:bg-espresso hover:text-cream;
+    @apply hover:bg-deep-roast hover:text-ivory;
   }
 
   .section-title {
-    @apply font-display text-section text-charcoal text-center mb-12;
+    @apply font-display text-section text-deep-roast text-center mb-12;
   }
 
   .nav-link {
-    @apply font-body text-sm font-medium uppercase tracking-wider text-charcoal;
+    @apply font-body text-sm font-medium uppercase tracking-wider text-deep-roast;
     @apply transition-colors duration-300;
-    @apply hover:text-warm-gold;
+    @apply hover:text-crema-gold;
   }
 
   .card {
-    @apply bg-cream/80 rounded-2xl overflow-hidden shadow-lg;
-    @apply transition-transform duration-300 ease-smooth;
+    @apply bg-cafe-cream/80 rounded-2xl overflow-hidden shadow-md;
+    @apply transition-all duration-200 ease-out;
     @apply hover:-translate-y-2 hover:shadow-2xl;
   }
 
   .menu-card {
-    @apply card border border-espresso/10;
+    @apply card border border-espresso-dark/10;
   }
 
   .menu-card-image {
@@ -79,15 +90,19 @@
   }
 
   .menu-card-title {
-    @apply font-display text-lg font-semibold mb-1 text-charcoal;
+    @apply font-display text-lg font-semibold mb-1 text-deep-roast;
+  }
+
+  .menu-card-underline {
+    @apply block h-0.5 w-0 bg-crema-gold transition-all duration-200 ease-out;
   }
 
   .menu-card-description {
-    @apply text-mocha text-sm mb-2;
+    @apply text-ash-grey text-sm mb-2;
   }
 
   .menu-card-price {
-    @apply text-warm-gold font-semibold;
+    @apply text-crema-gold font-semibold;
   }
 
   .tag-chip {
@@ -96,7 +111,7 @@
 
   /* Location Toggle */
   .location-toggle {
-    @apply inline-flex bg-cream/80 border border-espresso/10 rounded-full p-1;
+    @apply inline-flex bg-cafe-cream/80 border border-espresso-dark/10 rounded-full p-1;
   }
 
   .location-toggle-btn {
@@ -105,11 +120,11 @@
   }
 
   .location-toggle-btn.active {
-    @apply bg-espresso text-cream;
+    @apply bg-deep-roast text-ivory;
   }
 
   .location-toggle-btn:not(.active) {
-    @apply text-charcoal hover:text-warm-gold;
+    @apply text-deep-roast hover:text-crema-gold;
   }
 
   /* Food Slider */
@@ -124,8 +139,8 @@
 
   .slider-item {
     @apply relative flex-shrink-0 w-64 h-64 rounded-2xl overflow-hidden cursor-pointer;
-    @apply transition-transform duration-300;
-    @apply hover:scale-105;
+    @apply transition-all duration-200 ease-out;
+    @apply hover:scale-105 hover:-translate-y-2 hover:shadow-2xl;
   }
 
   .slider-item img {
@@ -133,12 +148,12 @@
   }
 
   .slider-item-overlay {
-    @apply absolute inset-0 bg-gradient-to-t from-espresso/70 to-transparent;
+    @apply absolute inset-0 bg-gradient-to-t from-deep-roast/70 to-transparent;
     @apply flex items-end p-4;
   }
 
   .slider-item-title {
-    @apply text-cream font-display text-xl;
+    @apply text-ivory font-display text-xl;
   }
 
   /* Coffee Steam */
@@ -147,7 +162,7 @@
   }
 
   .steam span {
-    @apply block w-2 h-10 rounded-full bg-cream/60 blur-sm;
+    @apply block w-2 h-10 rounded-full bg-cafe-cream/60 blur-sm;
     animation: steamRise 2.6s ease-in-out infinite;
   }
 
@@ -163,6 +178,23 @@
 
   .coffee-pour {
     animation: pour 1.6s ease-in-out infinite;
+  }
+
+  .skeleton {
+    @apply bg-[#e5e5e5] animate-pulse rounded-xl;
+  }
+
+  .toast-stack {
+    @apply fixed bottom-6 right-6 z-[1100] flex flex-col gap-3;
+  }
+
+  .toast {
+    background: var(--color-deep-roast);
+    color: var(--color-crema-gold);
+    padding: 12px 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    font-size: 14px;
   }
 }
 

@@ -221,7 +221,7 @@ export default function FoodSlider() {
   const offset = slideWidth ? -(index * (slideWidth + SLIDE_GAP)) : 0;
 
   return (
-    <section className="py-16 bg-cream overflow-hidden gsap-reveal">
+    <section className="py-16 bg-cafe-cream overflow-hidden gsap-reveal">
       <div className="slider-container relative">
         <motion.div
           className="slider-row"
@@ -244,7 +244,7 @@ export default function FoodSlider() {
         <button
           type="button"
           aria-label={t('slider.previous')}
-          className="absolute left-4 top-1/2 z-10 -translate-y-1/2 rounded-full bg-cream/90 px-3 py-2 text-espresso shadow-lg transition hover:bg-cream"
+          className="absolute left-4 top-1/2 z-10 -translate-y-1/2 rounded-full bg-cafe-cream/90 px-3 py-2 text-espresso-dark shadow-lg transition hover:bg-cafe-cream"
           onClick={() => setIndex((prev) => prev - 1)}
         >
           ‹
@@ -252,7 +252,7 @@ export default function FoodSlider() {
         <button
           type="button"
           aria-label={t('slider.next')}
-          className="absolute right-4 top-1/2 z-10 -translate-y-1/2 rounded-full bg-cream/90 px-3 py-2 text-espresso shadow-lg transition hover:bg-cream"
+          className="absolute right-4 top-1/2 z-10 -translate-y-1/2 rounded-full bg-cafe-cream/90 px-3 py-2 text-espresso-dark shadow-lg transition hover:bg-cafe-cream"
           onClick={() => setIndex((prev) => prev + 1)}
         >
           ›
@@ -266,19 +266,24 @@ const SliderItem = forwardRef(function SliderItem({ item }, ref) {
   const { t } = useTranslation();
   const title = t(item.titleKey);
   const subtitle = t(item.subtitleKey);
+  const [isLoaded, setIsLoaded] = useState(false);
 
   return (
     <a href="#menu" className="slider-item group" ref={ref}>
+      {!isLoaded && <div className="absolute inset-0 skeleton" />}
       <img
         src={item.image}
         alt={title}
-        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+        className={`w-full h-full object-cover transition-all duration-300 group-hover:scale-105 ${
+          isLoaded ? 'opacity-100 blur-0' : 'opacity-0 blur-sm'
+        }`}
         loading="lazy"
+        onLoad={() => setIsLoaded(true)}
       />
       <div className="slider-item-overlay">
         <div>
           <span className="slider-item-title">{title}</span>
-          <span className="block text-xs text-cream/80 mt-1 tracking-wide">
+          <span className="block text-xs text-ivory/80 mt-1 tracking-wide">
             {subtitle}
           </span>
         </div>

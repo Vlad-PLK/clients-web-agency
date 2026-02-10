@@ -47,7 +47,7 @@ export default function LoadingOverlay() {
           initial={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
-          className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-cream"
+          className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-cafe-cream"
         >
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -61,21 +61,21 @@ export default function LoadingOverlay() {
                 <span />
                 <span />
               </div>
-              <div className="absolute inset-x-3 bottom-4 h-8 border-2 border-espresso rounded-b-xl rounded-t-md bg-cream shadow-lg" />
-              <div className="absolute right-1 top-7 w-4 h-4 border-2 border-espresso rounded-full" />
-              <div className="absolute left-1/2 -translate-x-1/2 bottom-0 w-2 h-10 bg-warm-gold/50 rounded-full coffee-pour" />
+              <div className="absolute inset-x-3 bottom-4 h-8 border-2 border-espresso-dark rounded-b-xl rounded-t-md bg-cafe-cream shadow-lg" />
+              <div className="absolute right-1 top-7 w-4 h-4 border-2 border-espresso-dark rounded-full" />
+              <div className="absolute left-1/2 -translate-x-1/2 bottom-0 w-2 h-10 bg-crema-gold/50 rounded-full coffee-pour" />
             </div>
-            <h1 className="font-display text-hero text-charcoal mb-4">
+            <h1 className="font-display text-hero text-deep-roast mb-4">
               Café Fino
             </h1>
-            <p className="font-accent text-xl text-mocha italic mb-12">
+            <p className="font-accent text-xl text-ash-grey italic mb-12">
               {t('loading.tagline')}
             </p>
             
             <motion.div
               animate={{ y: [0, 10, 0] }}
               transition={{ duration: 1.5, repeat: Infinity }}
-              className="text-warm-gold"
+              className="text-crema-gold"
             >
               <svg 
                 className="w-6 h-6 mx-auto"
