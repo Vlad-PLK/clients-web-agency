@@ -1,0 +1,8 @@
+node_modules
+.git
+.vite
+*.md
+docs
+.gitignore
+.eslintrc*
+eslint.config.js
