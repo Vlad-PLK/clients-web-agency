@@ -8,6 +8,7 @@
     "toggleMenu": "Ouvrir le menu"
   },
   "brand": {
+    "name": "Café Fino",
     "tagline": "Cuisine de qualité & boissons créatives"
   },
   "hero": {
@@ -179,6 +180,7 @@
   },
   "instagram": {
     "cta": "Suivez-nous pour découvrir nos dernières créations.",
+    "viewOn": "Voir sur Instagram",
     "postAlt": {
       "table": "Table gourmande Café Fino",
       "breakfast": "Petit déjeuner à deux",
@@ -186,12 +188,41 @@
       "latteArt": "Latte art signature",
       "dessert": "Dessert gourmand",
       "granola": "Granola maison"
+    },
+    "posts": {
+      "table": {
+        "caption": "Cuisine soignée, moment signature",
+        "description": "Une table raffinée avec nos saveurs emblématiques et des accords de saison."
+      },
+      "breakfast": {
+        "caption": "Le matin, version Café Fino",
+        "description": "Un départ tout en douceur avec nos favoris barista, couleurs et arômes frais."
+      },
+      "barista": {
+        "caption": "Nos baristas à l'œuvre",
+        "description": "Gestes précis, espresso parfait et savoir-faire maison."
+      },
+      "latteArt": {
+        "caption": "Latte art signature",
+        "description": "Une micro-mousse soyeuse, finie avec la touche Café Fino."
+      },
+      "dessert": {
+        "caption": "Douceur finale",
+        "description": "Un dessert gourmand à marier avec un espresso intense."
+      },
+      "granola": {
+        "caption": "Bol de granola maison",
+        "description": "Croquant, frais et naturellement vibrant pour une pause légère."
+      }
     }
   },
   "footer": {
     "contact": "Contact",
     "rights": "Tous droits réservés.",
     "credit": "Site réalisé par"
+  },
+  "common": {
+    "loading": "Chargement..."
   },
   "slider": {
     "previous": "Précédent",

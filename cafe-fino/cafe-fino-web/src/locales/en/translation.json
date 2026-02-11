@@ -8,6 +8,7 @@
     "toggleMenu": "Toggle menu"
   },
   "brand": {
+    "name": "Café Fino",
     "tagline": "Quality Food & Creative Drinks"
   },
   "hero": {
@@ -179,6 +180,7 @@
   },
   "instagram": {
     "cta": "Follow us to discover our latest creations.",
+    "viewOn": "View on Instagram",
     "postAlt": {
       "table": "Café Fino gourmet table",
       "breakfast": "Breakfast for two",
@@ -186,12 +188,41 @@
       "latteArt": "Signature latte art",
       "dessert": "Gourmet dessert",
       "granola": "Homemade granola"
+    },
+    "posts": {
+      "table": {
+        "caption": "Cuisine crafted with care",
+        "description": "A refined table set with our signature flavors and seasonal pairings."
+      },
+      "breakfast": {
+        "caption": "Morning ritual, Café Fino style",
+        "description": "A gentle start with barista favorites, bright colors, and fresh aromas."
+      },
+      "barista": {
+        "caption": "Our baristas at work",
+        "description": "Expert hands, perfect pours, and espresso that hits just right."
+      },
+      "latteArt": {
+        "caption": "Latte art, signature pours",
+        "description": "A silky microfoam canvas finished with Café Fino flair."
+      },
+      "dessert": {
+        "caption": "Sweet finishes",
+        "description": "A dessert moment that pairs perfectly with a rich espresso shot."
+      },
+      "granola": {
+        "caption": "House granola bowl",
+        "description": "Crunchy, fresh, and naturally vibrant for a light, energizing bite."
+      }
     }
   },
   "footer": {
     "contact": "Contact",
     "rights": "All rights reserved.",
     "credit": "Site crafted by"
+  },
+  "common": {
+    "loading": "Loading..."
   },
   "slider": {
     "previous": "Previous",

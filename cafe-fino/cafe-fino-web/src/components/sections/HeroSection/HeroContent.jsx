@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import styles from './HeroSection.module.css';
 import { buildContentVariants } from './heroAnimations';
 
@@ -10,6 +11,7 @@ import { buildContentVariants } from './heroAnimations';
  */
 export default function HeroContent({ timings, animationComplete }) {
   const contentVariants = buildContentVariants(timings);
+  const { t } = useTranslation();
 
   return (
     <motion.div
@@ -19,14 +21,14 @@ export default function HeroContent({ timings, animationComplete }) {
       variants={contentVariants}
     >
       {/* Spacer for logo image (positioned above heading) */}
-      <div className="h-[180px] sm:h-[200px] md:h-[220px]" />
+      <div className="h-[200px] sm:h-[220px] md:h-[240px]" />
 
       {/* Heading positioned below logo */}
       <h2
         className="font-display text-lg sm:text-xl lg:text-3xl tracking-[0.04em] text-center max-w-3xl drop-shadow-md"
         style={{ color: '#1a1410' }}
       >
-        Cuisine de qualité & boissons créatives
+        {t('hero.tagline')}
       </h2>
     </motion.div>
   );

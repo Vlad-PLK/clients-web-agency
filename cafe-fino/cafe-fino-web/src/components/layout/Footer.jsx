@@ -31,7 +31,7 @@ export default function Footer() {
 
           {/* Nice */}
           <div>
-            <h4 className="font-display text-lg mb-4">Nice</h4>
+            <h4 className="font-display text-lg mb-4">{t('locations.shortName.nice')}</h4>
             <div className="space-y-3 text-sm text-ivory/70">
               <div className="flex items-start gap-2">
                 <MapPin size={16} className="flex-shrink-0 mt-0.5" />
@@ -51,7 +51,7 @@ export default function Footer() {
 
           {/* Paris */}
           <div>
-            <h4 className="font-display text-lg mb-4">Paris</h4>
+            <h4 className="font-display text-lg mb-4">{t('locations.shortName.paris')}</h4>
             <div className="space-y-3 text-sm text-ivory/70">
               <div className="flex items-start gap-2">
                 <MapPin size={16} className="flex-shrink-0 mt-0.5" />

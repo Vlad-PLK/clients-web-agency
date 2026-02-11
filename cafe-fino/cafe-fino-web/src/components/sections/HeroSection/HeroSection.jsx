@@ -3,11 +3,14 @@ import LogoReveal from './LogoReveal';
 import HeroContent from './HeroContent';
 import useHeroAnimation from '../../../hooks/useHeroAnimation';
 import styles from './HeroSection.module.css';
+import { useTranslation } from 'react-i18next';
 
 /**
  * Full-screen hero section with integrated image cascade animation.
  */
 export default function HeroSection() {
+  const { t } = useTranslation();
+
   try {
     const { isMobile, isTablet, animationComplete, timings } = useHeroAnimation();
 
@@ -37,8 +40,8 @@ export default function HeroSection() {
     return (
       <section className="h-screen w-full bg-cafe-cream flex items-center justify-center">
         <div className="text-center">
-          <h1 className="text-2xl font-bold text-deep-roast mb-4">Café Fino</h1>
-          <p className="text-deep-roast/70">{error?.message || 'Loading...'}</p>
+          <h1 className="text-2xl font-bold text-deep-roast mb-4">{t('brand.name')}</h1>
+          <p className="text-deep-roast/70">{error?.message || t('common.loading')}</p>
         </div>
       </section>
     );

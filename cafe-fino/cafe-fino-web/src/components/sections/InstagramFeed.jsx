@@ -14,26 +14,38 @@ export default function InstagramFeed() {
     {
       src: '/images/cafefino-coffeecup-latteart.jpg',
       altKey: 'table',
+      captionKey: 'table',
+      descriptionKey: 'table',
     },
     {
       src: '/images/purplelatte.jpg',
       altKey: 'breakfast',
+      captionKey: 'breakfast',
+      descriptionKey: 'breakfast',
     },
     {
       src: '/images/briochefraiseetchocolat.jpg',
       altKey: 'barista',
+      captionKey: 'barista',
+      descriptionKey: 'barista',
     },
     {
       src: '/images/granolafruits.jpg',
       altKey: 'latteArt',
+      captionKey: 'latteArt',
+      descriptionKey: 'latteArt',
     },
     {
       src: '/images/veggiesandsalmon.jpg',
       altKey: 'dessert',
+      captionKey: 'dessert',
+      descriptionKey: 'dessert',
     },
     {
       src: '/images/simpleavocadotoast.jpg',
       altKey: 'granola',
+      captionKey: 'granola',
+      descriptionKey: 'granola',
     },
   ];
 
@@ -51,6 +63,18 @@ export default function InstagramFeed() {
     window.addEventListener('keydown', handleKey);
     return () => window.removeEventListener('keydown', handleKey);
   }, [activeIndex, posts.length]);
+
+  useEffect(() => {
+    if (activeIndex === null) {
+      document.body.style.overflow = '';
+      return undefined;
+    }
+
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [activeIndex]);
 
   return (
     <section className="py-24 px-6 bg-cafe-cream gsap-reveal" ref={ref}>
@@ -95,7 +119,7 @@ export default function InstagramFeed() {
       <AnimatePresence>
         {activeIndex !== null && (
           <motion.div
-            className="fixed inset-0 z-[1200] flex items-center justify-center bg-black/70 px-4"
+            className="fixed inset-0 z-[1200] flex items-center justify-center bg-black/50 backdrop-blur-sm px-4 py-8"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -107,34 +131,70 @@ export default function InstagramFeed() {
               exit={{ scale: 0.96, opacity: 0 }}
               transition={{ duration: 0.3, ease: 'easeOut' }}
             >
+              <div className="relative bg-ivory rounded-3xl shadow-2xl overflow-hidden border border-espresso-dark/10">
+                <div className="flex items-center justify-between px-5 py-4 border-b border-espresso-dark/10 bg-cafe-cream/80">
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-crema-gold via-espresso-dark to-crema-gold p-[2px]">
+                      <div className="w-full h-full rounded-full bg-ivory flex items-center justify-center">
+                        <Instagram className="w-4 h-4 text-espresso-dark" />
+                      </div>
+                    </div>
+                    <div>
+                      <p className="text-sm font-semibold text-deep-roast">{config.social.instagramHandle}</p>
+                      <p className="text-xs text-ash-grey">{t('brand.name')}</p>
+                    </div>
+                  </div>
+                  <button
+                    type="button"
+                    aria-label="Close"
+                    onClick={() => setActiveIndex(null)}
+                    className="text-espresso-dark/70 hover:text-crema-gold transition-colors"
+                  >
+                    <X className="w-5 h-5" />
+                  </button>
+                </div>
+
+                <div className="bg-deep-roast/5">
+                  <img
+                    src={posts[activeIndex].src}
+                    alt={t(`instagram.postAlt.${posts[activeIndex].altKey}`)}
+                    className="w-full max-h-[70vh] object-contain"
+                  />
+                </div>
+
+                <div className="px-6 py-5 border-t border-espresso-dark/10 bg-cafe-cream/60">
+                  <p className="text-sm font-semibold text-deep-roast mb-1">
+                    {t(`instagram.posts.${posts[activeIndex].captionKey}.caption`)}
+                  </p>
+                  <p className="text-sm text-ash-grey leading-relaxed mb-4">
+                    {t(`instagram.posts.${posts[activeIndex].descriptionKey}.description`)}
+                  </p>
+                  <a
+                    href={config.social.instagram}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-crema-gold hover:text-espresso-dark transition-colors"
+                  >
+                    {t('instagram.viewOn')}
+                  </a>
+                </div>
+              </div>
+
               <button
                 type="button"
-                aria-label="Close"
-                onClick={() => setActiveIndex(null)}
-                className="absolute -top-10 right-0 text-ivory hover:text-crema-gold transition-colors"
-              >
-                <X className="w-6 h-6" />
-              </button>
-              <img
-                src={posts[activeIndex].src}
-                alt={t(`instagram.postAlt.${posts[activeIndex].altKey}`)}
-                className="w-full max-h-[80vh] object-contain rounded-2xl shadow-2xl"
-              />
-              <button
-                type="button"
-                aria-label="Previous"
+                aria-label={t('slider.previous')}
                 onClick={() =>
                   setActiveIndex((prev) => (prev - 1 + posts.length) % posts.length)
                 }
-                className="absolute left-0 top-1/2 -translate-y-1/2 bg-black/50 text-ivory p-3 rounded-full hover:bg-black/70"
+                className="absolute -left-2 md:-left-6 top-1/2 -translate-y-1/2 bg-black/50 text-ivory p-3 rounded-full hover:bg-black/70"
               >
                 <ChevronLeft className="w-5 h-5" />
               </button>
               <button
                 type="button"
-                aria-label="Next"
+                aria-label={t('slider.next')}
                 onClick={() => setActiveIndex((prev) => (prev + 1) % posts.length)}
-                className="absolute right-0 top-1/2 -translate-y-1/2 bg-black/50 text-ivory p-3 rounded-full hover:bg-black/70"
+                className="absolute -right-2 md:-right-6 top-1/2 -translate-y-1/2 bg-black/50 text-ivory p-3 rounded-full hover:bg-black/70"
               >
                 <ChevronRight className="w-5 h-5" />
               </button>
